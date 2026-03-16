@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY MASCOTAS /app
 
-RUN mvn clean package -DskipTests
+RUN mvn -f MASCOTAS/pom.xml clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java","-jar","target/*.jar"]
+CMD ["java", "-jar", "MASCOTAS/target/*.jar"]
