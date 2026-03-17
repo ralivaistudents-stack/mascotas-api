@@ -5,6 +5,7 @@ WORKDIR /app
 COPY MASCOTAS /app
 
 RUN mvn clean package -DskipTests
+./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
