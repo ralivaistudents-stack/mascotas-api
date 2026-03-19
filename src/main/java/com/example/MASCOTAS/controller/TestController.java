@@ -8,6 +8,6 @@ public class TestController {
 
     @GetMapping("/")
     public String home() {
-        return "API funcionando 🚀";
+        return "PI Mascotas funcionando correctamente 🚀, despues de cuatro dias de estar fregando con render hasta mi targeta de credito tube que poner para terminarlo  correctamente \uD83D\uDE0E";
     }
 }
