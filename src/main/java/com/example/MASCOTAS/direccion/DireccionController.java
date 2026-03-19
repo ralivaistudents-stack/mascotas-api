@@ -35,4 +35,9 @@ public class DireccionController {
 
         return direccionRepository.save(direccion);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        direccionRepository.deleteById(id);
+    }
 }

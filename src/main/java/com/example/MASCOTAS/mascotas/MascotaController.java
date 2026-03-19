@@ -35,4 +35,9 @@ public class MascotaController {
 
         return mascotaRepository.save(mascota);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        mascotaRepository.deleteById(id);
+    }
 }

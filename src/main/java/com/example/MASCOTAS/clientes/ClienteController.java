@@ -20,4 +20,9 @@ public class ClienteController {
         return clienteRepository.save(cliente);
     }
 
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        clienteRepository.deleteById(id);
+    }
+
 }

@@ -19,4 +19,9 @@ public class MascotaServicioController {
     public MascotaServicio create(@RequestBody MascotaServicio ms){
         return mascotaServicioRepository.save(ms);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        mascotaServicioRepository.deleteById(id);
+    }
 }
